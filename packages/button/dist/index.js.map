@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["Button"],"mappings":";;;;;;;AAAA;;;;AAEO,SAASA,MAAT,GAAkB;AACvB,SAAO,qDAAP;AACD","sourcesContent":["import React from \"react\";\n\nexport function Button() {\n  return <button>Youpi</button>;\n}\n"],"file":"index.js"}

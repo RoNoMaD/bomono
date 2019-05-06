@@ -1,0 +1,44 @@
+{
+  "name": "bomono",
+  "version": "0.0.0",
+  "author": "romain.lebascle@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5",
+    "commitizen": "^3.1.1",
+    "cz-lerna-changelog": "^2.0.2",
+    "husky": "^2.2.0",
+    "lerna": "^3.13.4",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "format:js": "prettier packages/**/*.js{,x} --write",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
+    }
+  }
+}
