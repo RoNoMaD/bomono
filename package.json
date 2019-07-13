@@ -35,10 +35,5 @@
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
-    }
   }
 }
